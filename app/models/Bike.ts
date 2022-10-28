@@ -1,9 +1,12 @@
-import { ImageSourcePropType } from 'react-native';
-
 export interface Bike {
-  model: string;
+  id: number;
+  candidateId: number;
+  name: string;
   type: string;
-  price: string;
-  rentType: string;
-  img: ImageSourcePropType | undefined;
+  bodySize: number;
+  maxLoad: number;
+  rate: number;
+  description: string;
+  ratings: number;
+  imageUrls: string[];
 }

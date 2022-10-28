@@ -17,9 +17,14 @@ const BikeCard: FC<BikeCardProps> = ({ data, onPress }) => (
     style={styles.cardContainer}
   >
     <Image style={styles.favoriteIcon} source={FavoriteIcon} />
-    <Image style={styles.bikeImage} source={data.img} />
+    <Image
+      style={styles.bikeImage}
+      source={{
+        uri: data.imageUrls[0],
+      }}
+    />
     <View style={styles.bikeModelContainer}>
-      <Text style={styles.bikeModelText}>{data.model}</Text>
+      <Text style={styles.bikeModelText}>{data.name}</Text>
     </View>
     <View style={styles.separator} />
     <View style={styles.bikeInfoContainer}>
@@ -27,8 +32,8 @@ const BikeCard: FC<BikeCardProps> = ({ data, onPress }) => (
         <Text style={styles.bikeTypeText}>{data.type}</Text>
       </View>
       <View style={styles.bikePriceContainer}>
-        <Text style={styles.bikePriceText}>€ {data.price}/</Text>
-        <Text style={styles.bikeDayText}>{data.rentType}</Text>
+        <Text style={styles.bikePriceText}>€ {data.rate}/</Text>
+        <Text style={styles.bikeDayText}>Day</Text>
       </View>
     </View>
   </TouchableOpacity>

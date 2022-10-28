@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Text, Button } from 'react-native';
 
-const BikeDetails: FC = ({ route, navigation }) => {
+const BikeBooking: FC = ({ route, navigation }) => {
   const { bike } = route.params;
 
   return (
@@ -13,4 +13,4 @@ const BikeDetails: FC = ({ route, navigation }) => {
   );
 };
 
-export default BikeDetails;
+export default BikeBooking;

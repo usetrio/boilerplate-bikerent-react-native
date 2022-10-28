@@ -1,2 +1,2 @@
 export { default as Bikes } from './Bikes';
-export { default as BikeDetails } from './BikeDetails';
+export { default as BikeBooking } from './BikeBooking';

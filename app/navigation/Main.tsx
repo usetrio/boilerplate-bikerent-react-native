@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { Bikes, BikeDetails } from '../screens';
+import { Bikes, BikeBooking } from '../screens';
 import { NavBarRightItem, NavBarLeftItem } from '../components';
 
 const MainStack = createStackNavigator();
@@ -20,7 +20,7 @@ const Main: FC = () => (
         },
       }}
     />
-    <MainStack.Screen name="BikeDetails" component={BikeDetails} />
+    <MainStack.Screen name="Booking" component={BikeBooking} />
   </MainStack.Navigator>
 );
 

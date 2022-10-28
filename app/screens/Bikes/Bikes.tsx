@@ -1,15 +1,15 @@
 import React, { FC, useRef, useCallback, useState } from 'react';
 import { FlashList } from '@shopify/flash-list';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { BottomSheetModal as GorhomBottomSheetModal } from '@gorhom/bottom-sheet';
-import { BikeCard, BottomSheetModal } from '../../components';
+import { BikeCard, BottomSheetModal, NavBarHeader } from '../../components';
+import { BikeDetailsModal } from './components';
 import { Bike } from '../../models';
 import { BikeImage } from '../../assets';
 
 import styles from './styles';
-import { BikeDetailsModal } from './components';
 
 const DATA: Bike[] = [
   {
@@ -44,9 +44,7 @@ const Bikes: FC = () => {
 
   return (
     <SafeAreaView edges={['bottom']} style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.headerText}>{route.name}</Text>
-      </View>
+      <NavBarHeader title={route.name} />
       <View style={styles.listContainer}>
         <FlashList
           renderItem={({ item }) => (

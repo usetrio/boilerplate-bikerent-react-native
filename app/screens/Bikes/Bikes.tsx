@@ -9,6 +9,7 @@ import { Bike } from '../../models';
 import { BikeImage } from '../../assets';
 
 import styles from './styles';
+import { BikeDetailsModal } from './components';
 
 const DATA: Bike[] = [
   {
@@ -59,9 +60,7 @@ const Bikes: FC = () => {
         />
       </View>
       <BottomSheetModal ref={bottomSheetRef} snapPoints={snapPoints}>
-        <View>
-          <Text>{selectedBike?.model}</Text>
-        </View>
+        <BikeDetailsModal data={selectedBike} />
       </BottomSheetModal>
     </SafeAreaView>
   );

@@ -27,6 +27,11 @@ const Bikes: FC = () => {
     bottomSheetRef.current?.present();
   }, []);
 
+  const itemSeparatorComponent = useCallback(
+    () => <View style={styles.listItemSeparator} />,
+    []
+  );
+
   return (
     <SafeAreaView edges={['bottom']} style={styles.container}>
       <NavBarHeader title={route.name} />
@@ -41,14 +46,12 @@ const Bikes: FC = () => {
             )}
             estimatedItemSize={200}
             data={data}
-            ItemSeparatorComponent={() => (
-              <View style={styles.listItemSeparator} />
-            )}
+            ItemSeparatorComponent={itemSeparatorComponent}
             refreshing={isLoading}
             onRefresh={refetch}
           />
         )}
-        {isLoading && <ActivityIndicator size="large" />}
+        {isLoading && <ActivityIndicator color="white" size="large" />}
       </View>
       <BottomSheetModal ref={bottomSheetRef} snapPoints={snapPoints}>
         <BikeDetailsModal data={selectedBike} />

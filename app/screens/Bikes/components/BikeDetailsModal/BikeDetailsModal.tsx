@@ -1,18 +1,50 @@
 import React, { FC } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
+import { BikeInfo, ImageSlider, RateContainer } from './fragments';
+import { BikeTypeBadge } from '../../../../components';
 import { Bike } from '../../../../models';
+import { FavoriteBigIcon } from '../../../../assets';
+import styles from './styles';
 
 interface BikeDetailsModalProps {
   data: Bike | null;
 }
 
-const BikeDetailsModal: FC<BikeDetailsModalProps> = ({ data }) => (
-  <View>
-    <Text>{data?.model}</Text>
-    <Text>{data?.price}</Text>
-    <Text>{data?.rentType}</Text>
-    <Text>{data?.type}</Text>
-  </View>
-);
+const BikeDetailsModal: FC<BikeDetailsModalProps> = ({ data }) => {
+  return (
+    <>
+      <View style={styles.headerContainer}>
+        <ImageSlider images={data?.imageUrls} />
+        <BikeInfo
+          bodySize={data?.bodySize}
+          maxLoad={data?.maxLoad}
+          ratings={data?.ratings}
+        />
+      </View>
+
+      <ScrollView style={styles.scrollView}>
+        <View style={styles.scrollViewSubContainer}>
+          <Text style={styles.bikeTitle}>{data?.name}</Text>
+          <BikeTypeBadge type={data?.type} />
+          <Text style={styles.bikeDescription}>{data?.description}</Text>
+          <View style={styles.separator} />
+          <RateContainer rate={data?.rate} />
+          <View style={styles.separator} />
+          <Text style={styles.addressTitle}>Full adress after booking</Text>
+          <View style={styles.mapContainer} />
+        </View>
+      </ScrollView>
+
+      <View style={styles.footerContainer}>
+        <TouchableOpacity style={styles.favoriteButton}>
+          <Image source={FavoriteBigIcon} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.rentBikeButton}>
+          <Text style={styles.rentBikeButtonText}>Rent Bike</Text>
+        </TouchableOpacity>
+      </View>
+    </>
+  );
+};
 
 export default BikeDetailsModal;

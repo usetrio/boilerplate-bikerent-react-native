@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
-import { FavoriteIcon } from '../../assets';
+import { BikeTypeBadge } from '../../components';
+import { BikePlaceholder, FavoriteIcon } from '../../assets';
 import { Bike } from '../../models';
 
 import styles from './styles';
@@ -22,15 +23,15 @@ const BikeCard: FC<BikeCardProps> = ({ data, onPress }) => (
       source={{
         uri: data.imageUrls[0],
       }}
+      resizeMode="contain"
+      defaultSource={BikePlaceholder}
     />
     <View style={styles.bikeModelContainer}>
       <Text style={styles.bikeModelText}>{data.name}</Text>
     </View>
     <View style={styles.separator} />
     <View style={styles.bikeInfoContainer}>
-      <View style={styles.bikeTypeContainer}>
-        <Text style={styles.bikeTypeText}>{data.type}</Text>
-      </View>
+      <BikeTypeBadge type={data.type} />
       <View style={styles.bikePriceContainer}>
         <Text style={styles.bikePriceText}>€ {data.rate}/</Text>
         <Text style={styles.bikeDayText}>Day</Text>

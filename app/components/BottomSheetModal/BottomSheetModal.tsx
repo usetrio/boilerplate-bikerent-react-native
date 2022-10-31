@@ -9,8 +9,6 @@ import {
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
 
-import styles from './styles';
-
 export interface BottomSheetModalProps {
   children: ReactNode;
   onDismiss?: () => void;
@@ -33,7 +31,7 @@ const BottomSheetModal: ForwardRefRenderFunction<
       onChange={handleSheetChanges}
       onDismiss={onDismiss}
     >
-      <BottomSheetView style={styles.container}>{children}</BottomSheetView>
+      <BottomSheetView>{children}</BottomSheetView>
     </GorhomBottomSheetModal>
   );
 };

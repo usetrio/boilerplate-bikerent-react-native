@@ -9,8 +9,8 @@ const styles = StyleSheet.create({
     height: 200,
     paddingHorizontal: 24,
     paddingTop: 10,
-    borderBottomRightRadius: 30,
-    borderBottomLeftRadius: 30,
+    borderBottomRightRadius: 20,
+    borderBottomLeftRadius: 20,
   },
   headerSubContainer: {
     flexDirection: 'row',

@@ -4,10 +4,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { ActivityIndicator, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { BottomSheetModal as GorhomBottomSheetModal } from '@gorhom/bottom-sheet';
-import { useBikes } from '../../hooks';
-import { BikeCard, BottomSheetModal, NavBarHeader } from '../../components';
+import { useBikes } from '@app/hooks';
+import { BikeCard, BottomSheetModal, NavBarHeader } from '@app/components';
 import { BikeDetailsModal } from './components';
-import { Bike } from '../../models';
+import { Bike } from '@app/models';
 
 import styles from './styles';
 

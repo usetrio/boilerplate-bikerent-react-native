@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
 import { View, Image, Text, TouchableOpacity } from 'react-native';
-import { BikeTypeBadge } from '../../components';
-import { BikePlaceholder, FavoriteIcon } from '../../assets';
-import { Bike } from '../../models';
+import { BikeTypeBadge } from '@app/components';
+import { BikePlaceholder, FavoriteIcon } from '@app/assets';
+import { Bike } from '@app/models';
 
 import styles from './styles';
 

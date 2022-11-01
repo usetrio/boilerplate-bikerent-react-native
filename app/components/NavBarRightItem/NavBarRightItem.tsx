@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { TouchableOpacity, Text, Image } from 'react-native';
-import { LocationIcon } from '../../assets';
+import { LocationIcon } from '@app/assets';
 
 import styles from './styles';
 

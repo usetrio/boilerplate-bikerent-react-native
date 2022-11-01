@@ -8,8 +8,7 @@
     "skipLibCheck": true, /* Skip type checking all .d.ts files. */
     "jsx": "react-native",
     "resolveJsonModule": true,
-    "baseUrl": "./",
-    "rootDir": "./",
+    "baseUrl": ".",
     "paths": {
       "@app/*": ["app/*"],
     },

@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity } from 'react-native';
 import { BikeInfo, ImageSlider, RateContainer } from './fragments';
-import { BikeTypeBadge } from '../../../../components';
-import { Bike } from '../../../../models';
-import { FavoriteBigIcon, MapImage } from '../../../../assets';
+import { BikeTypeBadge } from '@app/components';
+import { Bike } from '@app/models';
+import { FavoriteBigIcon, MapImage } from '@app/assets';
 
 import styles from './styles';
 

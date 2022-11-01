@@ -1,6 +1,8 @@
 # Trio - Bike Rental Boilerplate - React Native
 ![React Native](https://img.shields.io/badge/react--native-0.70.3-green?style=flat-square) ![TypeScript](https://img.shields.io/badge/-TypeScript-blue?style=flat-square)
 
+https://user-images.githubusercontent.com/2034112/199245466-bc64de6b-c08a-42ab-9c23-d660fdb9867f.mp4
+
 ## How to run it
 
 Install node modules:

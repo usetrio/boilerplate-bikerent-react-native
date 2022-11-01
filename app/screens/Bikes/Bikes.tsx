@@ -32,6 +32,11 @@ const Bikes: FC = () => {
     []
   );
 
+  const handleCloseModal = useCallback(
+    () => bottomSheetRef.current?.dismiss(),
+    []
+  );
+
   return (
     <SafeAreaView edges={['bottom']} style={styles.container}>
       <NavBarHeader title={route.name} />
@@ -54,7 +59,10 @@ const Bikes: FC = () => {
         {isLoading && <ActivityIndicator color="white" size="large" />}
       </View>
       <BottomSheetModal ref={bottomSheetRef} snapPoints={snapPoints}>
-        <BikeDetailsModal data={selectedBike} />
+        <BikeDetailsModal
+          handleCloseModal={handleCloseModal}
+          data={selectedBike}
+        />
       </BottomSheetModal>
     </SafeAreaView>
   );

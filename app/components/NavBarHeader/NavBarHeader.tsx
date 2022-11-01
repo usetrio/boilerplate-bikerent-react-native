@@ -13,22 +13,17 @@ const NavBarHeader: FC<NavBarHeaderProps> = ({
   title,
   hasBackButton = false,
   onBackButtonPress,
-}) => {
-  return (
-    <View style={styles.header}>
-      <View style={styles.headerSubContainer}>
-        {hasBackButton && (
-          <TouchableOpacity
-            style={styles.backButton}
-            onPress={onBackButtonPress}
-          >
-            <Text>Back</Text>
-          </TouchableOpacity>
-        )}
-        <Text style={styles.headerText}>{title}</Text>
-      </View>
+}) => (
+  <View style={styles.header}>
+    <View style={styles.headerSubContainer}>
+      {hasBackButton && (
+        <TouchableOpacity style={styles.backButton} onPress={onBackButtonPress}>
+          <Text>Back</Text>
+        </TouchableOpacity>
+      )}
+      <Text style={styles.headerText}>{title}</Text>
     </View>
-  );
-};
+  </View>
+);
 
 export default NavBarHeader;

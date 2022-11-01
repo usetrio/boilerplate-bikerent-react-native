@@ -4,12 +4,10 @@ import { MenuIcon } from '@app/assets';
 
 import styles from './styles';
 
-const NavBarLeftItem: FC = () => {
-  return (
-    <TouchableOpacity style={styles.button}>
-      <Image source={MenuIcon} />
-    </TouchableOpacity>
-  );
-};
+const NavBarLeftItem: FC = () => (
+  <TouchableOpacity style={styles.button}>
+    <Image source={MenuIcon} />
+  </TouchableOpacity>
+);
 
 export default NavBarLeftItem;

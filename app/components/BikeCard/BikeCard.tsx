@@ -33,7 +33,7 @@ const BikeCard: FC<BikeCardProps> = ({ data, onPress }) => (
     <View style={styles.bikeInfoContainer}>
       <BikeTypeBadge type={data.type} />
       <View style={styles.bikePriceContainer}>
-        <Text style={styles.bikePriceText}>€ {data.rate}/</Text>
+        <Text style={styles.bikePriceText}>{data.rate} €/ </Text>
         <Text style={styles.bikeDayText}>Day</Text>
       </View>
     </View>

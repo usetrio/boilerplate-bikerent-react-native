@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "app/assets/fonts/Mont-Heavy.ttf",
+      "sha1": "441c19d8bec352046f60c752e7971588487c02d3"
+    },
+    {
+      "path": "app/assets/fonts/Mont-SemiBold.ttf",
+      "sha1": "c7c0754d583ed4eee69a572ea3d37073bac468a8"
+    }
+  ]
+}

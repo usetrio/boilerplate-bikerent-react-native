@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     fontSize: 24,
     fontWeight: '800',
+    color: '#1B1B1B',
   },
   separator: {
     height: 1,

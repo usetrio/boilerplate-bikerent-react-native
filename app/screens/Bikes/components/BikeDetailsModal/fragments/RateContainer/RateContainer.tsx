@@ -11,11 +11,11 @@ const RateContainer: FC<RateContainerProps> = ({ rate }) => (
   <>
     <View style={styles.leftContainer}>
       <Text style={styles.leftTitle}>Day</Text>
-      <Text style={styles.rightTitle}>€ {rate}</Text>
+      <Text style={styles.rightTitle}>{rate} €</Text>
     </View>
     <View style={styles.rightContainer}>
       <Text style={styles.leftTitle}>Week</Text>
-      <Text style={styles.rightTitle}>€ {rate && rate * 7}</Text>
+      <Text style={styles.rightTitle}>{rate && rate * 7} €</Text>
     </View>
   </>
 );

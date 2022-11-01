@@ -5,6 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 import { Main } from './navigation';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const queryClient = new QueryClient();
 
@@ -13,11 +14,13 @@ export default function App() {
     <React.Fragment>
       <StatusBar barStyle="light-content" />
       <NavigationContainer>
-        <BottomSheetModalProvider>
-          <QueryClientProvider client={queryClient}>
-            <Main />
-          </QueryClientProvider>
-        </BottomSheetModalProvider>
+        <GestureHandlerRootView style={{ flex: 1 }}>
+          <BottomSheetModalProvider>
+            <QueryClientProvider client={queryClient}>
+              <Main />
+            </QueryClientProvider>
+          </BottomSheetModalProvider>
+        </GestureHandlerRootView>
       </NavigationContainer>
     </React.Fragment>
   );

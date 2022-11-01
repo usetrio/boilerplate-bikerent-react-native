@@ -1,7 +1,7 @@
 import React, { FC, useRef, useCallback, useState } from 'react';
 import { FlashList } from '@shopify/flash-list';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ActivityIndicator, View } from 'react-native';
+import { ActivityIndicator, Platform, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { BottomSheetModal as GorhomBottomSheetModal } from '@gorhom/bottom-sheet';
 import { useBikes } from '@app/hooks';
@@ -11,7 +11,7 @@ import { Bike } from '@app/models';
 
 import styles from './styles';
 
-const snapPoints = ['88%'];
+const snapPoints = Platform.OS === 'ios' ? ['88%'] : ['92%'];
 
 const Bikes: FC = () => {
   const { data, isLoading, refetch } = useBikes();

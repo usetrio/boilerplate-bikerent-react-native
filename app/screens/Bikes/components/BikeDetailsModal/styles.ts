@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: 'white',
+    borderColor: 'rgba(255, 255, 255, 0.1)',
   },
   footerContainer: {
     paddingTop: 18,
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
   rentBikeButtonText: {
     fontSize: 16,
     fontWeight: '800',
+    color: '#1B1B1B',
   },
   scrollView: {
     zIndex: -1,

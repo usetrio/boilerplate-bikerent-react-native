@@ -24,9 +24,11 @@ const styles = StyleSheet.create({
   },
   infoTitle: {
     marginBottom: 4,
+    color: '#1B1B1B',
   },
   infoData: {
     fontWeight: '800',
+    color: '#1B1B1B',
   },
   separator: {
     borderWidth: 1,

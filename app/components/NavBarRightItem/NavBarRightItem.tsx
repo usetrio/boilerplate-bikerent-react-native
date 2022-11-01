@@ -8,13 +8,11 @@ interface NavBarRightItemProps {
   location: string;
 }
 
-const NavBarRightItem: FC<NavBarRightItemProps> = ({ location }) => {
-  return (
-    <TouchableOpacity style={styles.button}>
-      <Text style={styles.locationText}>{location}</Text>
-      <Image source={LocationIcon} />
-    </TouchableOpacity>
-  );
-};
+const NavBarRightItem: FC<NavBarRightItemProps> = ({ location }) => (
+  <TouchableOpacity style={styles.button}>
+    <Text style={styles.locationText}>{location}</Text>
+    <Image source={LocationIcon} />
+  </TouchableOpacity>
+);
 
 export default NavBarRightItem;

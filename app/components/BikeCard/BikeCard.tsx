@@ -13,7 +13,7 @@ interface BikeCardProps {
 
 const BikeCard: FC<BikeCardProps> = ({ data, onPress }) => (
   <TouchableOpacity
-    activeOpacity={0.95}
+    activeOpacity={1}
     onPress={onPress}
     style={styles.cardContainer}
   >

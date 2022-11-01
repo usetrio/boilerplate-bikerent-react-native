@@ -29,7 +29,9 @@ const BikeDetailsModal: FC<BikeDetailsModalProps> = ({
     <ScrollView style={styles.scrollView}>
       <View style={styles.scrollViewSubContainer}>
         <Text style={styles.bikeTitle}>{data?.name}</Text>
-        <BikeTypeBadge type={data?.type} />
+        <View style={styles.bikeTypeContainer}>
+          <BikeTypeBadge type={data?.type} />
+        </View>
         <Text style={styles.bikeDescription}>{data?.description}</Text>
         <View style={styles.separator} />
         <RateContainer rate={data?.rate} />

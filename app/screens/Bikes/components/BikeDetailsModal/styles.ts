@@ -21,6 +21,9 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     fontSize: 24,
   },
+  bikeTypeContainer: {
+    alignSelf: 'flex-start',
+  },
   favoriteButton: {
     flex: 1,
     width: 60,

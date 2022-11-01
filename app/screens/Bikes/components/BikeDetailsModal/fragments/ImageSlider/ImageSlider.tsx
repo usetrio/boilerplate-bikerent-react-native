@@ -24,7 +24,7 @@ const ImageSlider: FC<ImageSliderProps> = ({ images }) => {
     <SwiperFlatList
       autoplay
       autoplayLoop
-      keyExtractor={(item) => item}
+      keyExtractor={(item) => `${item} ${Math.random() * 100}`}
       showPagination
       paginationStyleItem={styles.paginationContainer}
       paginationStyleItemActive={styles.paginationActiveItem}

@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     fontSize: 24,
     fontWeight: '800',
+    fontFamily: 'Mont',
     color: '#1B1B1B',
   },
   separator: {
@@ -65,10 +66,13 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#1B1B1B',
     fontWeight: '800',
+    fontFamily: 'Mont',
   },
   bikeDayText: {
     fontSize: 16,
     color: '#1B1B1B',
+    fontFamily: 'Mont',
+    fontWeight: '400',
   },
 });
 

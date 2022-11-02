@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: '800',
     fontSize: 34,
+    fontFamily: 'Mont',
   },
 });
 

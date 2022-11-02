@@ -9,17 +9,22 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: '800',
     fontSize: 16,
+    fontFamily: 'Mont',
   },
   bikeDescription: {
     fontSize: 14,
     marginTop: 8,
+    fontWeight: '400',
+    lineHeight: 16.24,
     color: 'white',
+    fontFamily: 'Mont',
   },
   bikeTitle: {
     marginBottom: 4,
     color: 'white',
     fontWeight: '800',
     fontSize: 24,
+    fontFamily: 'Mont',
   },
   bikeTypeContainer: {
     alignSelf: 'flex-start',
@@ -71,6 +76,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '800',
     color: '#1B1B1B',
+    fontFamily: 'Mont',
   },
   scrollView: {
     zIndex: -1,

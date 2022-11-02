@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
   bikeTypeText: {
     fontSize: 12,
     color: '#1B1B1B',
+    fontFamily: 'Mont',
+    fontWeight: '400',
   },
 });
 

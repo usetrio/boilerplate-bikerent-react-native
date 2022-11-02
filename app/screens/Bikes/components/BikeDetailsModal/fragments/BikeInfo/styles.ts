@@ -25,10 +25,13 @@ const styles = StyleSheet.create({
   infoTitle: {
     marginBottom: 4,
     color: '#1B1B1B',
+    fontFamily: 'Mont',
+    fontWeight: '400',
   },
   infoData: {
     fontWeight: '800',
     color: '#1B1B1B',
+    fontFamily: 'Mont',
   },
   separator: {
     borderWidth: 1,

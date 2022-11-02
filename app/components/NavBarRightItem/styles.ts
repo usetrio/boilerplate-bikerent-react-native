@@ -10,6 +10,8 @@ const styles = StyleSheet.create({
   locationText: {
     marginRight: 4,
     color: 'white',
+    fontFamily: 'Mont',
+    fontWeight: '400',
   },
 });
 

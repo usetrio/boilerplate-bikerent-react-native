@@ -11,11 +11,13 @@ const styles = StyleSheet.create({
   leftTitle: {
     fontSize: 16,
     color: 'white',
+    fontFamily: 'Mont',
   },
   rightTitle: {
     fontSize: 24,
     fontWeight: '800',
     color: 'white',
+    fontFamily: 'Mont',
   },
   rightContainer: {
     marginTop: 9,

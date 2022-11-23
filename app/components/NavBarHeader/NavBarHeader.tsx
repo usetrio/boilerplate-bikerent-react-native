@@ -14,7 +14,7 @@ const NavBarHeader: FC<NavBarHeaderProps> = ({
   hasBackButton = false,
   onBackButtonPress,
 }) => (
-  <View style={styles.header}>
+  <View testID="nav-bar-header" style={styles.header}>
     <View style={styles.headerSubContainer}>
       {hasBackButton && (
         <TouchableOpacity style={styles.backButton} onPress={onBackButtonPress}>

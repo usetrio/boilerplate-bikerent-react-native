@@ -5,8 +5,12 @@ import { ActivityIndicator, Platform, View } from 'react-native';
 import { useRoute } from '@react-navigation/native';
 import { BottomSheetModal as GorhomBottomSheetModal } from '@gorhom/bottom-sheet';
 import { useBikes } from '@app/hooks';
-import { BikeCard, BottomSheetModal, NavBarHeader } from '@app/components';
-import { BikeDetailsModal } from './components';
+import {
+  BikeCard,
+  BottomSheetModal,
+  NavBarHeader,
+  BikeDetailsModal,
+} from '@app/components';
 import { Bike } from '@app/models';
 
 import styles from './styles';

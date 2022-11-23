@@ -9,7 +9,7 @@ interface NavBarRightItemProps {
 }
 
 const NavBarRightItem: FC<NavBarRightItemProps> = ({ location }) => (
-  <TouchableOpacity style={styles.button}>
+  <TouchableOpacity testID="nav-bar-right-item-button" style={styles.button}>
     <Text style={styles.locationText}>{location}</Text>
     <Image source={LocationIcon} />
   </TouchableOpacity>

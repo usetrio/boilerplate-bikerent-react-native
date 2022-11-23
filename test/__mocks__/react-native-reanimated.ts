@@ -2,7 +2,6 @@ import 'react-native-gesture-handler/jestSetup';
 
 declare var global: any;
 
-// eslint-disable-next-line no-underscore-dangle
 global.__reanimatedWorkletInit = jest.fn();
 
 jest.mock('react-native/Libraries/Animated/NativeAnimatedHelper');

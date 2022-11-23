@@ -52,6 +52,18 @@
       "jsx",
       "json",
       "node"
-    ]
+    ],
+    "setupFiles": [
+      "<rootDir>/test/setup.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?@react-native|@react-navigation|react-native|@gorhom/bottom-sheet)"
+    ],
+    "globals": {
+      "__DEV__": true
+    }
   }
 }

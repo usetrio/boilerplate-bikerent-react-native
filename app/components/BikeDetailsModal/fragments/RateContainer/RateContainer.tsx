@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, ViewProps } from 'react-native';
 
 import styles from './styles';
 
-interface RateContainerProps {
+interface RateContainerProps extends ViewProps {
   rate?: number;
 }
 
-const RateContainer: FC<RateContainerProps> = ({ rate }) => (
-  <>
+const RateContainer: FC<RateContainerProps> = ({ rate, testID }) => (
+  <View testID={testID}>
     <View style={styles.leftContainer}>
       <Text style={styles.leftTitle}>Day</Text>
       <Text style={styles.rightTitle}>{rate} €</Text>
@@ -17,7 +17,7 @@ const RateContainer: FC<RateContainerProps> = ({ rate }) => (
       <Text style={styles.leftTitle}>Week</Text>
       <Text style={styles.rightTitle}>{rate && rate * 7} €</Text>
     </View>
-  </>
+  </View>
 );
 
 export default RateContainer;

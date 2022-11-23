@@ -5,7 +5,7 @@ import { MenuIcon } from '@app/assets';
 import styles from './styles';
 
 const NavBarLeftItem: FC = () => (
-  <TouchableOpacity style={styles.button}>
+  <TouchableOpacity testID="nav-bar-left-item-button" style={styles.button}>
     <Image source={MenuIcon} />
   </TouchableOpacity>
 );

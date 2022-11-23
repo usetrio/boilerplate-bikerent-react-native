@@ -33,6 +33,12 @@ Run the app:
 yarn android
 ```
 
+## Tests
+
+```sh
+yarn test
+```
+
 ## Folder structure
 
 * [assets/](./app/assets)

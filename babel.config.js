@@ -1,14 +1,23 @@
 module.exports = {
-  presets: ['module:metro-react-native-babel-preset'],
+  presets: ['@react-native/babel-preset'],
   plugins: [
-    'react-native-reanimated/plugin',
     [
       'module-resolver',
       {
         alias: {
           '@app': './app',
         },
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
       },
     ],
+    [
+      'module:react-native-dotenv',
+      {
+        moduleName: '@env',
+        path: '.env',
+        allowUndefined: true,
+      },
+    ],
+    'react-native-reanimated/plugin',
   ],
 };

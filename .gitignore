@@ -31,9 +31,10 @@ local.properties
 *.iml
 *.hprof
 .cxx/
-
+coverage
 # node.js
 #
+.yarn
 node_modules/
 npm-debug.log
 yarn-error.log
